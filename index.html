@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的個人網站</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; color: #333; }
-        header { border-bottom: 2px solid #eee; margin-bottom: 20px; }
-        .course-link { background: #f0f6ff; border-left: 5px solid #007bff; padding: 15px; margin-top: 20px; }
-        a { color: #007bff; text-decoration: none; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 650px; margin: 40px auto; padding: 20px; color: #333; }
+        header { border-bottom: 2px solid #eee; margin-bottom: 25px; padding-bottom: 10px; }
+        .course-card { background: #f0f6ff; border-left: 5px solid #007bff; padding: 16px 20px; margin-bottom: 18px; border-radius: 0 8px 8px 0; }
+        .course-card h3 { margin-top: 0; margin-bottom: 8px; color: #0056b3; }
+        .course-card p { margin: 6px 0; }
+        a { color: #007bff; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
+        footer { margin-top: 40px; border-top: 1px solid #eee; padding-top: 15px; color: #777; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -23,10 +26,22 @@
         <p>我目前正在就讀電腦科學系，這裡是我紀錄技術成長與生活點滴的地方。</p>
     </section>
 
-    <section class="course-link">
+    <section>
         <h2>📚 課程連結</h2>
-        <p>目前我正在參與 <strong>CI002 - C++ Programming</strong> 課程。</p>
-        <p>👉 <a href="https://github.com/ulee-bit/11402_CI002">點此查看我的 C++ 課程儲存庫 (11402_CI002)</a></p>
+        
+        <!-- 資料結構 課程 -->
+        <div class="course-card">
+            <h3>CS203A - Data Structures (資料結構)</h3>
+            <p>115 學年度第一學期課程，涵蓋各類資料結構實作、演算法練習與專案。</p>
+            <p>👉 <a href="https://github.com/ulee-bit/11501_CS203A" target="_blank" rel="noopener noreferrer">查看我的資料結構課程儲存庫 (11501_CS203A)</a></p>
+        </div>
+
+        <!-- C++ 課程 -->
+        <div class="course-card">
+            <h3>CI002 - C++ Programming (物件導向程式設計)</h3>
+            <p>114 學年度第二學期課程，記錄 C++ 基礎語法、演算法實作與上機考試紀錄。</p>
+            <p>👉 <a href="https://github.com/ulee-bit/11402_CI002" target="_blank" rel="noopener noreferrer">查看我的 C++ 課程儲存庫 (11402_CI002)</a></p>
+        </div>
     </section>
 
     <footer>
